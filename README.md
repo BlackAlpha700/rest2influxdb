@@ -20,7 +20,7 @@ Start script
 Done.
 
 ## InfluxDB 2.4
-Copy `config24.cfg.example` to `config.cfg` and define your parameters like server name, user, password etc.
+Copy `config24.cfg.example` to `config.cfg` and define your parameters like server name, bucket, org, api token etc.
 
 Start script
 `./rest2influxdb24.sh <Item_Name>`
