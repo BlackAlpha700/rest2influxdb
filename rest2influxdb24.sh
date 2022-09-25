@@ -57,8 +57,9 @@ cat ${itemname}.xml \
      | tr -d ',:[{"' \
      | sed 's/time/ /g;s/state/ /g' \
      | awk -v item="$itemname" '{print item",item=" item " value=" $2 " " $1 "000000"}' \
-     | sed 's/value=ON/value=1/g;s/value=OFF/value=0/g' \
-> ${itemname}.txt
+     | sed 's/value=ON/value=1i/g;s/value=OFF/value=0i/g' \
+     | sed 's/value=OPEN/value=1i/g;s/value=CLOSED/value=0i/g' \
+>> ${itemname}.txt
 
 values=`wc -l ${itemname}.txt | cut -d " " -f 1`
 echo ""
