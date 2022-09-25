@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# openHAB server
+openhabserver="openhab.local"
+openhabport="8080"
+serviceid="jdbc"
+
+# InfluxDB server
+influxserver="influxdb-server.local"
+influxport="8086"
+
+influxbucket="openhab_db"
+influxorg="openHAB"
+influxapitoken="xyz"
+
+importsize=100000
+sleeptime=5
