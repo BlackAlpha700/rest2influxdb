@@ -1,6 +1,6 @@
 #!/bin/bash
-# This script reads the values of an item from openhab via REST and imports the data to influxdb
-# useage: get_item_states.sh <itemname>
+# This script reads the values of an item from openhab via REST and imports the data to influxdb2.4
+# usage: ./rest2influxdb24.sh <itemname>
 
 
 itemname="$1"
