@@ -31,6 +31,7 @@ Done.
 # (un)known Issues
 
 * Tested with openhab 3.3 and influx 2.4
+* Error when converting ON/OFF and OPEN/CLOSED to int value
 * The timestamps cannot be calculated correctly on macOS
 * RRD compresses data, so the further you go into the past the bigger gaps you get between two data points.  
 see: https://github.com/openhab/openhab1-addons/wiki/rrd4j-persistence
