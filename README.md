@@ -4,7 +4,9 @@ Forked from CWempe and added a version for InfluxDB 2.4
 
 This script reads values for a defined item from openHAB via the REST interface.
 The values are written to text files and converted to a specific format to import them in InfluxDB.
+
 for InfluxDB 1.2 see: https://docs.influxdata.com/influxdb/v1.2/write_protocols/line_protocol_reference/
+
 for InfluxDB 2.4 see: https://docs.influxdata.com/influxdb/v2.4/reference/syntax/line-protocol/
 
 # Usage
@@ -14,6 +16,8 @@ Copy `config.cfg.example` to `config.cfg` and define your parameters like server
 
 Start script
 `./rest2influxdb.sh <Item_Name>`
+
+Done.
 
 ## InfluxDB 2.4
 Copy `config24.cfg.example` to `config.cfg` and define your parameters like server name, user, password etc.
